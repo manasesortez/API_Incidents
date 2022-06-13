@@ -21,7 +21,7 @@ if ($parts[1] != "incidentes") {
 $id = $parts[2] ?? null;
 
 //incidentes
-$database = new Database("us-cdbr-east-05.cleardb.net", "heroku_94ea94d006b36a4", "b338104b34438e", "b45c87a2");
+$database = new Database("", "", "", "");
 $gateway = new IncidentesGateway($database);
 $controller = new IncidentesController($gateway);
 
